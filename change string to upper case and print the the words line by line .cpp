@@ -7,6 +7,15 @@ output: SAKIB IS A GOOD BOY
 */
 
 
+/*
+
+input: sakib is a good boy
+
+output: SAKIB IS A GOOD BOY
+
+*/
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -19,14 +28,15 @@ int main(){
 while(true){
     string s ;
     cin>>s;
-    if(s.size()==0){
-
-        break;
-    }
+    
     for(int i=0;i<s.size();i++){
 
         s[i]=upper(s[i]);
 
+    }
+    if(s.size()==0){
+
+        break;
     }
 
 
