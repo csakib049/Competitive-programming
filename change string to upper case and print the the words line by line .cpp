@@ -13,6 +13,8 @@ input: sakib is a good boy
 
 output: SAKIB IS A GOOD BOY
 
+https://www.hackerearth.com/problem/algorithm/capitalbaazi/
+
 */
 
 
