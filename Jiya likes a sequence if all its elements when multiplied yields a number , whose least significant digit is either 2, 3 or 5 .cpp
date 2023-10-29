@@ -1,3 +1,25 @@
+/*
+Sample Input
+
+2
+5
+2 2 2 2 2
+4
+2 2 2 2
+
+
+Sample Output
+
+YES
+NO
+
+https://www.hackerearth.com/problem/algorithm/jiyas-sequence/
+*/
+
+
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
