@@ -5,11 +5,11 @@ using namespace std;
 
 int main(){
 
-int a,loop=0;
+long long a,i,loop=0;
 cin>>a;
 
 
-for(int i=1;i<=100;i++){
+for( i=1;;i++){
 
    if(i%4==0){
         loop++;
