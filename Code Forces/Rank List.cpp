@@ -4,7 +4,9 @@
     //===========================( اللهم صّلِ وسَلّمْ عَلۓِ نَبِيْنَا مُحَمد ﷺ )=========================\\
     //================================================================================\\
      
-     
+
+//SOLVE 1
+
     #include<bits/stdc++.h>
     using namespace std;
      
@@ -42,3 +44,58 @@
     cout<<cnt<<endl;
        
     }
+
+//SOLVE 2
+
+/*
+     //https://codeforces.com/problemset/problem/166/A
+   
+    //================================================================================\\
+    //===========================( اللهم صّلِ وسَلّمْ عَلۓِ نَبِيْنَا مُحَمد ﷺ )=========================\\
+    //================================================================================\\
+     
+     
+    #include<bits/stdc++.h>
+    using namespace std;
+     
+    #define endl "\n"
+    #define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+    #define fraction() cout.unsetf(ios::floatfield); cout.precision(10); cout.setf(ios::fixed,ios::floatfield);
+     
+     
+    int main()
+    {
+        optimize();
+       int t; cin>>t;
+       int n; cin>>n;
+       
+       vector<pair<int,int>>v(t);
+       
+       for(int i=0;i<t;i++)
+       {
+         cin>>v[i].first>>v[i].second;
+         v[i].first=v[i].first*(-1);
+       }
+       
+      int cnt=0;
+      sort(v.begin(),v.end());
+    
+      for(int i=0;i<t;i++){
+       if(v[i].first == v[n-1].first && v[i].second==v[n-1].second)cnt++;
+      }
+      
+    cout<<cnt<<endl;
+       
+    }
+    
+*/
+
+
+
+
+
+
+
+
+
+
