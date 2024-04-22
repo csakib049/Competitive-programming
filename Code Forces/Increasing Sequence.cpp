@@ -17,22 +17,25 @@ using namespace std;
 int main()
 {
     optimize();
- int t; cin>>t;
- while(t--){
-   int n; cin>>n;
-   vector<int>v(n);
-   for(int i=0;i<n;i++)cin>>v[i];
-   
-  int x=1;
-  for(int i=0;i<n;i++){
-    if(v[i]==x){
-      x++;
+
+  int t; cin>>t;
+  while(t--){
+    int n; cin>>n;
+    vector<int>v(n);
+    for(int i=0;i<n;i++)cin>>v[i];
+    
+//---------------------------
+    int x=1;
+    for(int i=0;i<n;i++){
+      if(v[i]==x){
+        x+=2;
+        continue;
+      }else if(v[i]!=x){
+        x+=1;
+        continue;
+      }
     }
-    x++;
+    cout<<x-1<<endl;
+//---------------------------
   }
-  cout<<x-1<<endl;
-  
-  
- }
- 
 }
