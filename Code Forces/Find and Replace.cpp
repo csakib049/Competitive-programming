@@ -24,10 +24,12 @@ int main(){
    
    
    for(int i=0;i<n;i++){
+     //last.find(s[i]) searches for the character s[i] in the last map. 
+     
      if(last.find(s[i])==last.end()){
        last[s[i]]=i;
      }else{
-       if((i-last[s[i]])%2!=0){
+       if((i-last[s[i]])%2!=0){  //odd
          ok=false;
          break;
        }
