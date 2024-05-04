@@ -14,32 +14,29 @@ using namespace std;
 #define fraction() cout.unsetf(ios::floatfield); cout.precision(10); cout.setf(ios::fixed,ios::floatfield);
 
 int main(){
-
+  
   optimize();
   
   int t; cin>>t;
   while(t--){
-    int n; cin>>n;
-    string s; cin>>s;
-    
-    int k=count(s.begin(),s.end(),'.');
-    
-    if(k<=2){
-      cout<<k<<endl;
-       continue;
-    }
-    
-    int ans=k;
-    
-    for(int i=0;i<n-2;i++){
-      if(s.substr(i,3)=="..."){
-        ans=2;
-        break;
-      }
-    }
-    
-    cout<<ans<<endl;
-    
+  int n; cin>>n; 
+  string s; cin>>s;
+  
+  int k=count(s.begin(),s.end(),'.');
+  
+  int ans=k;
+  
+  for(int i=0;i<n;i++){
+     if(s.substr(i,3)=="..."){
+       ans=2;
+       break;
+     }
   }
   
+  cout<<ans<<endl;
+  }
 }
+/*
+ANS:  jodi por por 3ta dot thake tahole ans 2 r na hole joto gula dot ase toto gula hobe ans
+
+*/
