@@ -12,27 +12,15 @@ using namespace std;
 #define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define fraction() cout.unsetf(ios::floatfield); cout.precision(10); cout.setf(ios::fixed,ios::floatfield);
 
-int main()
-{
-    long long t;
-    cin>>t;
-    while(t--)
-    {
-       long long n,x,y=0,N=0;
-        cin>>n;
+int main(){
+  int t; cin>>t;
+  while(t--){
+  int n; cin>>n;
+  
+  vector<int>v(n);
+  for(int i=0;i<n;i++)cin>>v[i];
 
-
-        vector<long long>v;
-
-        for(int i=0;i<n;i++){
-            cin>>x;
-            v.push_back(x);
-        }
-
-
-        if(v[0]==1)cout<<"YES"<<endl;
-        else cout<<"NO"<<endl;
-
-    }
-
+  if(v[0]==1)cout<<"YES"<<endl;
+  else cout<<"NO"<<endl;
+  }
 }
