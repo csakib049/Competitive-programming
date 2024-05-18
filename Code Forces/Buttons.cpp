@@ -12,23 +12,19 @@ using namespace std;
 #define fraction() cout.unsetf(ios::floatfield); cout.precision(10); cout.setf(ios::fixed,ios::floatfield);
          
 
- int main(){
-   optimize();
-   
-   int t; cin>>t;
-   while(t--){
-     int a,b,c; cin>>a>>b>>c;
-    
-     if(c%2==0){
-       //Anna's turn
-        if(a>b)cout<<"First"<<endl;//Anna
-        else cout<<"Second"<<endl;//Katie
-     }else{
-       //Katie's turn
-        if(a<b)cout<<"Second"<<endl;//Katie
-        else cout<<"First"<<endl;//Anna
+int main(){
+       optimize();
        
-     }
-    
-  }
+	int t; cin>>t;
+	while(t--){
+	int a,b,c; cin>>a>>b>>c;
+	
+	if(a>b)cout<<"First"<<endl;
+	else if(b>a)cout<<"Second"<<endl;
+	else if(a==b){
+		if(c%2==0)cout<<"Second"<<endl;
+		else cout<<"First"<<endl;
+	   }	
+		
+	}
 }
