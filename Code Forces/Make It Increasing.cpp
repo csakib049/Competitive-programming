@@ -25,23 +25,21 @@ int main()
     int cnt=0;
     for(int i=n-2;i>=0;i--){
       
-      if(v[i+1]==0){
-        
-        cnt=-1;
-        break;
-        
-      }
-      
       while( v[i]>=v[i+1]){
         
         v[i]=v[i]/2;
         cnt++;
+      }
+      
+
+      if(v[i]==0 && i>0){
+        cnt=-1;
+        break;
       }
     }
     
      cout<<cnt<<endl;
      
    }
-
 }
 
