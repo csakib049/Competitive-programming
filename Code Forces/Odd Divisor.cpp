@@ -27,13 +27,19 @@ int main()
    int t; cin>>t;
    while(t--){
    	
-   	long long n; cin>>n;
+      	long long n; cin>>n;
    	
-   	if((n&(n-1))==0)cout<<"NO"<<endl;
-   	else cout<<"YES"<<endl;
+   	   if((n&(n-1))==0){   // if(n==2 power number)
+      		cout<<"NO"<<endl;
+   		  
+   		  
+      	}
+      	else {
+     		cout<<"YES"<<endl;
+     	}
    	
    }
 }
 
 //https://www.youtube.com/watch?v=2LlsfyG6IH8
- 
+//watch Bit Manipulation Series(Bangla)
